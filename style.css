@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Brygada 1918", serif;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+.categorie {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 200vh;
+  position: relative;
+}
+
+.titre_en_tete {
+  position: absolute;
+  left: 5%;
+  width: 45%;
+  height: 5%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.titre_en_tete.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.titre_categorie {
+  margin-left: 5%;
+  font-size: 300%;
+  transform: translateX(-200%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.titre_categorie.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.categorie_select {
+  margin-top: 10%;
+  position: absolute;
+  width: 85%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.categorie_select_maison,
+.categorie_select_villa,
+.categorie_select_-200m2,
+.categorie_select_vide {
+  width: 24.25%;
+  height: 24%;
+}
+
+.categorie_select_piscine,
+.categorie_select_200m2,
+.categorie_select_contemporrain,
+.categorie_select_insolite {
+  width: 49.5%;
+  height: 24%;
+}
+
+.categorie_select_pleinpied,
+.categorie_select_etage {
+  width: 36.75%;
+  height: 24%;
+}
+
+.categorie_select_maison {
+  background-image: url(./img/villa15.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.categorie_select_piscine {
+  background-image: url(./img/villa26.jpg);
+  background-size: 100% 100%;
+}
+
+.categorie_select_200m2 {
+  background-image: url(./img/villa22.jpg);
+  background-size: 100% 100%;
+}
+
+.categorie_select_insolite {
+  background-image: url(./img/villa21.jpg);
+  background-size: 100% 100%;
+}
+
+.categorie_select_contemporrain {
+  background-image: url(./img/villa9.jpg);
+  background-size: 100% 100%;
+}
+
+.categorie_select_pleinpied {
+  background-image: url(./img/villa25.jpg);
+  background-size: 100% 100%;
+}
+
+.categorie_select_etage {
+  background-image: url(./img/villa11.jpg);
+  background-size: 100% 100%;
+}
+
+/*******************************/
+/********************************/
+/********************************/
+/**********************ajouter flou de l'image au scroll*********/
+
+.videscroll2 {
+  background-color: #023058;
+}
+
+.videscroll1,
+.videscroll4 {
+  background-color: #dcb253;
+}
+
+.videscroll3 {
+  background-color: #3571a6;
+}
+
+.categorie_text_hover {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color ease-in-out 0.3s;
+}
+.categorie_text_hover:hover {
+  background-color: #023058e0;
+}
+
+.lienbouton {
+  width: 60%;
+  height: 15%;
+}
+
+.detail_button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 100%;
+  color: #dcb253;
+  border: 1px solid #dcb253;
+  border-radius: 1em;
+  transition: transform 1s, background-color 0.5s;
+}
+
+.detail_button:hover {
+  background-color: #dcb253;
+  box-shadow: -5px 5px 3px rgb(22, 22, 22);
+  transform: translate(2px, -2px);
+  color: black;
+}
+.categorie_text_hover p {
+  text-align: center;
+  width: 60%;
+  font-size: 150%;
+  color: white;
+  margin-bottom: 10%;
+  border-bottom: 1px solid #dcb253;
+  line-height: 2.5em;
+}
+
+.categorie_select_maison {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.categorie_select_maison.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.videscroll1 {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.videscroll1.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.categorie_select_piscine {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.categorie_select_piscine.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.categorie_select_200m2 {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.categorie_select_200m2.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.categorie_select_insolite {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.categorie_select_insolite.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.videscroll2 {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.videscroll2.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.categorie_select_contemporrain {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.categorie_select_contemporrain.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.videscroll3 {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.videscroll3.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.categorie_select_pleinpied {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.categorie_select_pleinpied.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.videscroll4 {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.videscroll4.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.categorie_select_etage {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+}
+.categorie_select_etage.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+/************************partie cards logements**************/
+
+.gallery {
+  margin: 70px auto 0;
+  padding: 0 20px;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 380px);
+  grid-gap: 50px;
+  justify-content: center;
+}
+
+.item {
+  min-height: 380px;
+  background: #bebebe96;
+  box-shadow: 2px 2px 10px black;
+  color: white;
+  border-radius: 10px;
+}
+
+.item:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+.image {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0 0;
+}
+
+.text {
+  width: 100%;
+  height: 20%;
+  background-color: #023058;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+}
+
+h2 {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.img1 {
+  background-image: url(./img/villa1.jpg);
+  background-size: 100% 100%;
+}
+.img2 {
+  background-image: url(./img/villa2.jpg);
+  background-size: 100% 100%;
+}
+.img3 {
+  background-image: url(./img/villa3.jpg);
+  background-size: 100% 100%;
+}
+.img4 {
+  background-image: url(./img/villa4.jpg);
+  background-size: 100% 100%;
+}
+.img5 {
+  background-image: url(./img/villa5.jpg);
+  background-size: 100% 100%;
+}
+.img6 {
+  background-image: url(./img/villa6.jpg);
+  background-size: 100% 100%;
+}
+.img7 {
+  background-image: url(./img/villa7.jpg);
+  background-size: 100% 100%;
+}
+.img8 {
+  background-image: url(./img/villa8.jpg);
+  background-size: 100% 100%;
+}
+.img9 {
+  background-image: url(./img/villa9.jpg);
+  background-size: 100% 100%;
+}
+.img10 {
+  background-image: url(./img/villa10.jpg);
+  background-size: 100% 100%;
+}
+.img11 {
+  background-image: url(./img/villa11.jpg);
+  background-size: 100% 100%;
+}
+.img12 {
+  background-image: url(./img/villa12.jpg);
+  background-size: 100% 100%;
+}
+.img13 {
+  background-image: url(./img/villa13.png);
+  background-size: 100% 100%;
+}
+.img14 {
+  background-image: url(./img/villa14.jpg);
+  background-size: 100% 100%;
+}
+.img15 {
+  background-image: url(./img/villa15.jpg);
+  background-size: 100% 100%;
+}
+.img16 {
+  background-image: url(./img/villa16.jpg);
+  background-size: 100% 100%;
+}
+.img17 {
+  background-image: url(./img/villa17.jpg);
+  background-size: 100% 100%;
+}
+.img18 {
+  background-image: url(./img/villa18.jpg);
+  background-size: 100% 100%;
+}
+.img19 {
+  background-image: url(./img/villa19.jpg);
+  background-size: 100% 100%;
+}
+.img20 {
+  background-image: url(./img/villa20.jpg);
+  background-size: 100% 100%;
+}
+.img21 {
+  background-image: url(./img/villa21.jpg);
+  background-size: 100% 100%;
+}
+.img22 {
+  background-image: url(./img/villa22.jpg);
+  background-size: 100% 100%;
+}
+.img23 {
+  background-image: url(./img/villa23.jpg);
+  background-size: 100% 100%;
+}
+.img24 {
+  background-image: url(./img/villa24.jpg);
+  background-size: 100% 100%;
+}
+.img25 {
+  background-image: url(./img/villa25.jpg);
+  background-size: 100% 100%;
+}
+.img26 {
+  background-image: url(./img/villa26.jpg);
+  background-size: 100% 100%;
+}
+.img27 {
+  background-image: url(./img/villa27.png);
+  background-size: 100% 100%;
+}
+.img28 {
+  background-image: url(./img/villa28.webp);
+  background-size: 100% 100%;
+}
+.img29 {
+  background-image: url(./img/villa29.jpg);
+  background-size: 100% 100%;
+}
+.img30 {
+  background-image: url(./img/villa30.jpg);
+  background-size: 100% 100%;
+}
+
+.lien_bouton {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  background-color: #3571a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.lien_bouton:hover {
+  box-shadow: 2px 2px 5px black;
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.fleche {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  transform: rotate(45deg);
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-radius: 3px;
+}
+
+.barre {
+  width: 21px;
+  height: 0px;
+  border-top: 3px solid white;
+  transform: rotate(90deg);
+  border-radius: 3px;
+}
+
+/******************overlay**/
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.overlay_contenant {
+  color: white;
+  font-size: 1.5em;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(43, 43, 43, 0.904);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.img_overlay {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text_overlay {
+  width: 50%;
+  height: 80%;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.caracteristic {
+  width: 95%;
+  height: 60%;
+  background-color: rgba(226, 226, 226, 0.89);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  color: black;
+  border-radius: 10px;
+}
+
+.surface,
+.nbch,
+.ssol,
+.nbsdb,
+.pool,
+.nbgarage {
+  width: 49%;
+  height: 20%;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.gras {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.overlay_villa2,
+.overlay_villa1,
+.overlay_villa3,
+.overlay_villa4,
+.overlay_villa5,
+.overlay_villa6,
+.overlay_villa7,
+.overlay_villa8,
+.overlay_villa9,
+.overlay_villa10 {
+  display: none;
+}
+
+.img_villa1 {
+  background-image: url(./img/villa1.jpg);
+}
+
+.img_villa2 {
+  background-image: url(./img/villa2.jpg);
+}
+
+.img_villa3 {
+  background-image: url(./img/villa3.jpg);
+}
+.img_villa4 {
+  background-image: url(./img/villa4.jpg);
+}
+.img_villa5 {
+  background-image: url(./img/villa5.jpg);
+}
+.img_villa6 {
+  background-image: url(./img/villa6.jpg);
+}
+.img_villa7 {
+  background-image: url(./img/villa7.jpg);
+  background-size: 90% 60%;
+}
+.img_villa8 {
+  background-image: url(./img/villa8.jpg);
+  background-size: 90% 80%;
+}
+.img_villa9 {
+  background-image: url(./img/villa9.jpg);
+}
+.img_villa10 {
+  background-image: url(./img/villa10.jpg);
+}

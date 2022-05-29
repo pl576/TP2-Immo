@@ -1,0 +1,38 @@
+22:33 27/05/2022
+
+traditionnel
+(villa 30; villa 27; villa 15)
+
+
+
++200m2
+(villa 1; villa 2; villa 3; villa 4; villa 9; villa 10; villa 11; villa 13; villa 
+14; villa 15; villa 17; villa 19; villa 20; villa 21; villa 22; villa 23; 
+villa 24; villa 25; villa 26; villa 27; villa 28; villa 29; villa 30)
+
+
+
+piscine
+(villa1; villa3; villa4; villa5; villa6; villa7; villa 10; villa 14; villa 16; 
+villa 19; villa20; villa 26; villa 28; villa 29)
+
+
+insolite
+(villa 25; villa 24; villa 21; villa 19; villa 11)
+
+
+contemporraine
+(villa 4, villa 7; villa 8; villa 9; villa 10; villa 11; villa 13; villa 14;
+villa 16; villa 17; villa 19; villa 20; villa 21; villa 22; villa 23; 
+villa 25; villa 26; villa 28; villa 29)
+
+
+rez de chaussé
+(villa 25; villa 23; villa 10; villa 5, villa 1)
+
+
+étage
+(villa 2; villa 3; villa 4; villa 6; villa 7; villa 8; villa 9; villa 11;
+villa 12; villa 13; villa 14; villa 15; villa 16; villa 17; villa 18; 
+villa 19; villa 20;villa 21;villa 22;villa 24; villa 26; villa 27; villa 28; villa 29; 
+villa 30)
