@@ -403,3 +403,233 @@ function rez() {
     valeur.style.display = "none";
   }
 }
+
+//
+//
+// Fonction overlay
+
+function overlayUn() {
+  let a = document.getElementsByClassName("overlay_villa1");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDeux() {
+  let a = document.getElementsByClassName("overlay_villa2");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayTrois() {
+  let a = document.getElementsByClassName("overlay_villa3");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayQuatre() {
+  let a = document.getElementsByClassName("overlay_villa4");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayCinq() {
+  let a = document.getElementsByClassName("overlay_villa5");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlaySix() {
+  let a = document.getElementsByClassName("overlay_villa6");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlaySept() {
+  let a = document.getElementsByClassName("overlay_villa7");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayHuit() {
+  let a = document.getElementsByClassName("overlay_villa8");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayNeuf() {
+  let a = document.getElementsByClassName("overlay_villa9");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDix() {
+  let a = document.getElementsByClassName("overlay_villa10");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDun() {
+  let a = document.getElementsByClassName("overlay_villa11");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDdeux() {
+  let a = document.getElementsByClassName("overlay_villa12");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDtrois() {
+  let a = document.getElementsByClassName("overlay_villa13");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDquatre() {
+  let a = document.getElementsByClassName("overlay_villa14");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDcinq() {
+  let a = document.getElementsByClassName("overlay_villa15");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDsix() {
+  let a = document.getElementsByClassName("overlay_villa16");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDsept() {
+  let a = document.getElementsByClassName("overlay_villa17");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDhuit() {
+  let a = document.getElementsByClassName("overlay_villa18");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayDneuf() {
+  let a = document.getElementsByClassName("overlay_villa19");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayV() {
+  let a = document.getElementsByClassName("overlay_villa20");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayVun() {
+  let a = document.getElementsByClassName("overlay_villa21");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayVdeux() {
+  let a = document.getElementsByClassName("overlay_villa22");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayVtrois() {
+  let a = document.getElementsByClassName("overlay_villa23");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayVquatre() {
+  let a = document.getElementsByClassName("overlay_villa24");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayVcinq() {
+  let a = document.getElementsByClassName("overlay_villa25");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayVsix() {
+  let a = document.getElementsByClassName("overlay_villa26");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayVsept() {
+  let a = document.getElementsByClassName("overlay_villa27");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayVhuit() {
+  let a = document.getElementsByClassName("overlay_villa28");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayVneuf() {
+  let a = document.getElementsByClassName("overlay_villa29");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+function overlayTrente() {
+  let a = document.getElementsByClassName("overlay_villa30");
+
+  for (valeur of a) {
+    valeur.style.display = "flex";
+  }
+}
+
+function overlayUnNone() {
+  let a = document.getElementsByClassName("overlay");
+
+  for (valeur of a) {
+    valeur.style.display = "none";
+  }
+}
+
+function flecheOverlay() {
+  let a = document.getElementsByClassName("overlay lien_bouton");
+  for (valeur of a) {
+    valeur.style.transform = "-90deg";
+  }
+}
