@@ -315,6 +315,37 @@ window.addEventListener("scroll", () => {
     slidingTitreCategorie.classList.add("active");
   }
 });
+
+const slidingSecteur = document.querySelector(".titre_en_tete_secteur");
+
+window.addEventListener("scroll", () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewport = slidingSecteur.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.75
+  ) {
+    slidingSecteur.classList.add("active");
+  }
+});
+
+const slidingTitreSecteur = document.querySelector(".titre_secteur");
+
+window.addEventListener("scroll", () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewport =
+    slidingTitreSecteur.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.65
+  ) {
+    slidingTitreSecteur.classList.add("active");
+  }
+});
 //
 //
 //Fonction pour la partie catégorie
@@ -632,4 +663,52 @@ function flecheOverlay() {
   for (valeur of a) {
     valeur.style.transform = "-90deg";
   }
+}
+
+// Animation menu burger
+
+const slidingMenu = document.querySelector(".menu_responsive");
+const slidingBurger = document.querySelector(".menu_burger");
+const slidingLogo = document.querySelector(".logo_menu_responsive");
+
+function menuResponsive() {
+  slidingMenu.classList.toggle("active");
+  slidingBurger.classList.toggle("active");
+  slidingLogo.classList.toggle("active");
+}
+
+/* anime agent Le Touquet*/
+const containerJouhmy = document.querySelector(".container-jouhmy");
+const triggersJouhmy = document.querySelectorAll(".trigger-jouhmy");
+
+triggersJouhmy.forEach((trigger) =>
+  trigger.addEventListener("click", testpika)
+);
+
+function testpika() {
+  containerJouhmy.classList.toggle("active");
+}
+
+/* anime agent Lille */
+const containerLouthen = document.querySelector(".container-louthen");
+const triggersLouthen = document.querySelectorAll(".trigger-louthen");
+
+triggersLouthen.forEach((trigger) =>
+  trigger.addEventListener("click", testsala)
+);
+
+function testsala() {
+  containerLouthen.classList.toggle("active");
+}
+
+/* anime agent Arras*/
+const containerGenardiz = document.querySelector(".container-genardiz");
+const triggersGenardiz = document.querySelectorAll(".trigger-genardiz");
+
+triggersGenardiz.forEach((trigger) =>
+  trigger.addEventListener("click", testmew)
+);
+
+function testmew() {
+  containerGenardiz.classList.toggle("active");
 }
