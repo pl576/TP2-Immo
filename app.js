@@ -346,6 +346,45 @@ window.addEventListener("scroll", () => {
     slidingTitreSecteur.classList.add("active");
   }
 });
+
+//
+//
+//
+//Fonction titre categorie responsive
+//
+//
+const slidingCatResponsive = document.querySelector(
+  ".titre_en_tete_categorie2"
+);
+
+window.addEventListener("scroll", () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewport =
+    slidingCatResponsive.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.65
+  ) {
+    slidingCatResponsive.classList.add("active");
+  }
+});
+const slidingTitreCatResponsive = document.querySelector(".titre_categorie2");
+
+window.addEventListener("scroll", () => {
+  const { scrollTop, clientHeight } = document.documentElement;
+
+  const topElementToTopViewport =
+    slidingTitreCatResponsive.getBoundingClientRect().top;
+
+  if (
+    scrollTop >
+    (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.65
+  ) {
+    slidingTitreCatResponsive.classList.add("active");
+  }
+});
 //
 //
 //Fonction pour la partie catégorie
@@ -712,3 +751,36 @@ triggersGenardiz.forEach((trigger) =>
 function testmew() {
   containerGenardiz.classList.toggle("active");
 }
+
+/* Animation h2 filtres */
+
+const slideBottom = document.querySelector('.apparition');
+
+window.addEventListener('scroll', () => {
+    const {scrollTop, clientHeight} = document.documentElement;
+    const topelementToTopViewport = slideBottom.getBoundingClientRect().top;
+    if(scrollTop > (scrollTop + topelementToTopViewport).toFixed() - clientHeight * 0.50) {
+        slideBottom.classList.add('active')
+    } 
+})
+
+
+const slideBottomOne = document.querySelector('.apparition1');
+
+window.addEventListener('scroll', () => {
+    const {scrollTop, clientHeight} = document.documentElement;
+    const topelementToTopViewport = slideBottomOne.getBoundingClientRect().top;
+    if(scrollTop > (scrollTop + topelementToTopViewport).toFixed() - clientHeight * 0.50) {
+        slideBottomOne.classList.add('active')
+    } 
+})
+
+const slideBottomTwo = document.querySelector('.apparition2');
+
+window.addEventListener('scroll', () => {
+    const {scrollTop, clientHeight} = document.documentElement;
+    const topelementToTopViewport = slideBottomTwo.getBoundingClientRect().top;
+    if(scrollTop > (scrollTop + topelementToTopViewport).toFixed() - clientHeight * 0.50) {
+        slideBottomTwo.classList.add('active')
+    } 
+})
